@@ -7,7 +7,7 @@ const Tickets = (props) => (
     <ul>
       {props.tickets.map(({id, alias, subject, department}) => (
           <li key={id}>
-            <Link href={`/tickets/view/${id}`}>
+            <Link href={`/ticket/view/${id}`}>
               <a>{alias} - {subject} - {department.name}</a>
             </Link>
           </li>
