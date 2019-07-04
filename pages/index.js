@@ -4,8 +4,9 @@ const Index = () => (
   <div>
     <h1>Hello World!</h1>
     <ul>
-      <li><Link href="/user/profile">View Profile</Link></li>
-      <li><Link href="/ticket/list">Ticket List</Link></li>
+      <li><Link href="/user/profile"><a>View Profile</a></Link></li>
+      <li><Link href="/ticket/list"><a>Ticket List</a></Link></li>
+      <li><Link href="/login"><a>Login</a></Link></li>
     </ul>
   </div>
 )

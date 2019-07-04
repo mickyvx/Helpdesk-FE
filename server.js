@@ -21,6 +21,18 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
+  server.get('/login', (req, res) => {
+    return render(req, res , '/login')
+  })
+
+  server.get('/secret', (req, res) => {
+    return render(req, res , '/secret')
+  })
+
+  server.get('/', (req, res) => {
+    return render(req, res , '/')
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
